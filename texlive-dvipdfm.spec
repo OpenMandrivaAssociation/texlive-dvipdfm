@@ -1,3 +1,9 @@
+# revision 23089
+# category TLCore
+# catalog-ctan /dviware/dvipdfm
+# catalog-date 2011-01-01 13:56:40 +0100
+# catalog-license lppl
+# catalog-version 0.13.2d
 Name:		texlive-dvipdfm
 Version:	0.13.2d
 Release:	1
@@ -11,7 +17,7 @@ Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfm.x86_64-li
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(post):	texlive-tlpkg
-Requires:	texlive-dvipdfm.bin
+Provides:	texlive-dvipdfm.bin = %{EVRD}
 Provides:	tetex-dvipdfm
 Provides:	texlive-texmf-dvipdfm = 20111101
 Obsoletes:	texlive-texmf-dvipdfm <= 2007
@@ -67,6 +73,7 @@ dvipdfm" if necessary.
 %doc %{_texmfdir}/doc/man/man1/dvipdft.man1.pdf
 %doc %{_mandir}/man1/ebb.1*
 %doc %{_texmfdir}/doc/man/man1/ebb.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -75,10 +82,12 @@ dvipdfm" if necessary.
 %build
 
 %install
-# script
+# shell script
 mkdir -p %{buildroot}%{_bindir}
 cp -far bin/x86_64-linux/dvipdft %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
