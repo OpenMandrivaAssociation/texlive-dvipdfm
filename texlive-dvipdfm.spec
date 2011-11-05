@@ -16,7 +16,8 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfm.doc.tar.x
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfm.x86_64-linux.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Provides:	texlive-dvipdfm.bin = %{EVRD}
 Provides:	tetex-dvipdfm
 Provides:	texlive-texmf-dvipdfm = 20111101
