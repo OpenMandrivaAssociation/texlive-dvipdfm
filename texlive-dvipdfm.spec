@@ -6,7 +6,7 @@
 # catalog-version 0.13.2d
 Name:		texlive-dvipdfm
 Version:	0.13.2d
-Release:	1
+Release:	2
 Summary:	A DVI driver to produce PDF directly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfm
@@ -19,10 +19,8 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Provides:	texlive-dvipdfm.bin = %{EVRD}
-Provides:	tetex-dvipdfm
-Provides:	texlive-texmf-dvipdfm = 20111101
-Obsoletes:	texlive-texmf-dvipdfm <= 2007
-Conflicts:	texlive-texmf-dvipdfm <= 2007
+%rename tetex-dvipdfm
+%rename texlive-texmf-dvipdfm
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
