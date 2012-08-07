@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26689
 # category TLCore
 # catalog-ctan /dviware/dvipdfm
-# catalog-date 2011-01-01 13:56:40 +0100
+# catalog-date 2012-04-21 10:57:19 +0200
 # catalog-license lppl
 # catalog-version 0.13.2d
 Name:		texlive-dvipdfm
 Version:	0.13.2d
-Release:	3
+Release:	4
 Summary:	A DVI driver to produce PDF directly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfm
