@@ -6,7 +6,7 @@
 # catalog-version 0.13.2d
 Name:		texlive-dvipdfm
 Version:	0.13.2d
-Release:	4
+Release:	5
 Summary:	A DVI driver to produce PDF directly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfm
@@ -77,25 +77,3 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.13.2d-4
-+ Revision: 812237
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.13.2d-3
-+ Revision: 751207
-- Rebuild to reduce used resources
-
-* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13.2d-2
-+ Revision: 730331
-- Use rename macro instead of mix of provides/conflicts/obsoletes
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13.2d-1
-+ Revision: 718281
-- texlive-dvipdfm
-- texlive-dvipdfm
-- texlive-dvipdfm
-- texlive-dvipdfm
-
