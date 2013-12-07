@@ -6,7 +6,7 @@
 # catalog-version 0.13.2d
 Name:		texlive-dvipdfm
 Version:	0.13.2d
-Release:	5
+Release:	6
 Summary:	A DVI driver to produce PDF directly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvipdfm
