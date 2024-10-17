@@ -9,7 +9,7 @@ Version:	0.13.2d
 Release:	15
 Summary:	A DVI driver to produce PDF directly
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dvipdfm
+URL:		https://www.ctan.org/tex-archive/dviware/dvipdfm
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfm.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvipdfm.doc.tar.xz
